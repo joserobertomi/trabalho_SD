@@ -72,7 +72,7 @@ module TicTacToe {
     exception InvalidCoordinates {};
     exception NotYourGo {};
 
-    GameState play(in short x, in short y)
+    GameState play(in float x, in float y)
       raises (SquareOccupied, InvalidCoordinates, NotYourGo);
     // Place a piece at the specified coordinates. Returns the new
     // game state.
